@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- NusaStat — Indonesia in Numbers. A small static site: this page,
+     one stylesheet, and a few scripts that render the pages from the
+     figures in data.js. Everything it needs ships with it. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NusaStat — Indonesia in Numbers</title>
+<meta name="description" content="Indonesia's official statistics, explained in plain language: population, economy, jobs, prices, society and regions — every figure with its source and year.">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#/" aria-label="NusaStat home">
+      <span class="brand-mark" aria-hidden="true">N</span>
+      <span class="brand-text"><strong>NusaStat</strong><small>Indonesia in Numbers</small></span>
+    </a>
+    <nav class="site-nav" aria-label="Topics">
+      <a class="nav-link" href="#/population">Population</a>
+      <a class="nav-link" href="#/economy">Economy</a>
+      <a class="nav-link" href="#/employment">Jobs</a>
+      <a class="nav-link" href="#/prices">Prices</a>
+      <a class="nav-link" href="#/social">Society</a>
+      <a class="nav-link" href="#/regions">Regions</a>
+      <a class="nav-link" href="#/about">About</a>
+    </nav>
+    <div class="search-box">
+      <label class="visually-hidden" for="site-search">Search the site</label>
+      <input id="site-search" type="search" placeholder="Search figures…" autocomplete="off">
+      <div id="search-results" class="search-results" hidden></div>
+    </div>
+  </div>
+</header>
+
+<main id="page" class="page"></main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p><strong>NusaStat</strong> — an independent reader's guide to Indonesia's official statistics. Not affiliated with Statistics Indonesia (BPS) or any government body.</p>
+    <p>Figures: BPS (Statistics Indonesia), World Bank World Development Indicators, United Nations World Population Prospects 2024, Bank Indonesia, APJII. Every figure on this site names its source and year.</p>
+    <p><a href="#/about">Sources &amp; methods</a> · Updated 26 November 2026 · All pages work offline — the site ships its own data.</p>
+  </div>
+</footer>
+
+<script type="module" src="/main.js"></script>
+</body>
+</html>
